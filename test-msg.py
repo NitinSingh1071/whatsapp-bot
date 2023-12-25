@@ -1,13 +1,3 @@
-# from flask import Flask,request
-# from twilio.rest import Client
-# from twilio.twiml.messaging_response import MessagingResponse
-
-# sid = 'AC8f0ddaddeefe971d54e98f4fb703547a'
-# authToken= 'fb2b8071ea15fd4d42644c066952af73'
-
-# # Client = Client(sid, authToken)
-
-# # message = Client.messages.create(to='whatsapp:+919137103906',from_='whatsapp:+14155238886',body='This is a test msg from bot')
 
 from flask import Flask, request, Response
 from twilio.twiml.messaging_response import MessagingResponse
