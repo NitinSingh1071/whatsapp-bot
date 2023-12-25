@@ -6,14 +6,14 @@ import datetime
 import os
 from twilio.rest import Client
 
-client = MongoClient('mongodb+srv://nitinsingh:<password>@foodnest.8kvfjxp.mongodb.net/')
+client = MongoClient('mongodb+srv://<uername>:<password>@foodnest.8kvfjxp.mongodb.net/')
 db = client['whatsapp_db']
 collection = db['whatsapp_db']
 
 
 #==============================================
-sid = 'AC8f0ddaddeefe971d54e98f4fb703547a'
-authToken= 'fb2b8071ea15fd4d42644c066952af73'
+sid = '' #your Twilio SID
+authToken= '' #your Twilio authToken
 def diet_preference(sid, authToken):
     # Initialize the Twilio Client
     client = Client(sid, authToken)
@@ -125,15 +125,3 @@ def reply():
 
 if __name__ == "__main__":
     app.run(debug=True)
-
-
-#Name
-#Age
-#Address(street,city,district,state,pincode)
-#Phone number
-#Diet presence
-#disease
-
-#OrderID
-#payment option
-#Amount
